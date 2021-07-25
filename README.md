@@ -25,3 +25,7 @@ Create OpenShift Virtualization instance:
 ```
 $ oc apply --kustomize openshift-virtualization-instance/base
 ```
+
+## Using OpenShift Virtualization
+
+Download OpenShift Virtualization CLI (*virtctl*) from [GitHub](https://github.com/kubevirt/kubevirt/releases).
