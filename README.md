@@ -1,6 +1,6 @@
 # Kustomization for Deploying Red Hat OpenShift Virtualization (KubeVirt)
 
-Red Hat OpenShift Virtualization documentation is part of Red Hat OpenShift Container Platform product documentation and it can be found [here](https://access.redhat.com/documentation/en-us/openshift_container_platform).
+Red Hat OpenShift Virtualization documentation is part of Red Hat OpenShift Container Platform product documentation. It can be found at [access.redhat.com](https://access.redhat.com/documentation/en-us/openshift_container_platform) or [docs.openshift.com](https://docs.openshift.com/container-platform/4.7/virt/about-virt.html).
 
 ## Deploying Operator
 
