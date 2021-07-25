@@ -4,11 +4,23 @@ Red Hat OpenShift Virtualization documentation is part of Red Hat OpenShift Cont
 
 ## Deploying Operator
 
+Deploy OpenShift Virtualization operator:
+
 ```
 $ oc apply --kustomize openshift-virtualization-operator/base
 ```
 
+Make sure that the csvs deployed successfully:
+
+```
+$ oc get csv --namespace openshift-cnv
+NAME                                      DISPLAY                    VERSION   REPLACES                                  PHASE
+kubevirt-hyperconverged-operator.v2.6.5   OpenShift Virtualization   2.6.5     kubevirt-hyperconverged-operator.v2.6.4   Succeeded
+```
+
 ## Deploying OpenShift Virtualization Instance
+
+Create OpenShift Virtualization instance:
 
 ```
 $ oc apply --kustomize openshift-virtualization-instance/base
