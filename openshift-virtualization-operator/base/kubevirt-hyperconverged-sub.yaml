@@ -8,10 +8,3 @@ spec:
   name: kubevirt-hyperconverged
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  config:
-    selector:
-      matchLabels:
-        name: hyperconverged-cluster-operator
-    env:
-      - name: KVM_EMULATION
-        value: "true"
