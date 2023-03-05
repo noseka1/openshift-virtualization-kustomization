@@ -8,5 +8,12 @@ spec:
       matchLabels:
         name: hyperconverged-cluster-operator
     env:
-      - name: KVM_EMULATION
-        value: "true"
+    - name: KVM_EMULATION
+      value: "true"
+    # HTTP proxy settings
+    - name: HTTP_PROXY
+      value: ''
+    - name: HTTPS_PROXY
+      value: ''
+    - name: NO_PROXY
+      value: ''
