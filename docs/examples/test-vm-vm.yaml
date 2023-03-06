@@ -5,7 +5,7 @@ metadata:
 spec:
   dataVolumeTemplates:
     - metadata:
-        name: test-vm-rootdisk-die8w
+        name: test-vm-rootdisk
       spec:
         pvc:
           accessModes:
@@ -69,5 +69,5 @@ spec:
                 expire: false
           name: cloudinitdisk
         - dataVolume:
-            name: test-vm-rootdisk-die8w
+            name: test-vm-rootdisk
           name: rootdisk
