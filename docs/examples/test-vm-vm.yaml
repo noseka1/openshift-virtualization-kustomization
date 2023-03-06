@@ -67,6 +67,9 @@ spec:
               password: yqhl-56fp-cceo
               chpasswd:
                 expire: false
+              ssh_pwauth: true
+              ssh_authorized_keys:
+              - ''
           name: cloudinitdisk
         - dataVolume:
             name: test-vm-rootdisk
