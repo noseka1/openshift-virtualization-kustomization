@@ -3,11 +3,6 @@ kind: VirtualMachine
 metadata:
   name: test-vm
 spec:
-#  nodeSelector:
-#    node-role.kubernetes.io/baremetal: ""
-  tolerations:
-  - effect: NoSchedule
-    key: node-role.kubernetes.io/baremetal
   dataVolumeTemplates:
   - metadata:
       name: test-vm-rootdisk
@@ -34,6 +29,11 @@ spec:
         flavor.template.kubevirt.io/small: 'true'
         workload.template.kubevirt.io/server: 'true'
     spec:
+#      nodeSelector:
+#        node-role.kubernetes.io/baremetal: ""
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/baremetal
       domain:
         cpu:
           cores: 1
