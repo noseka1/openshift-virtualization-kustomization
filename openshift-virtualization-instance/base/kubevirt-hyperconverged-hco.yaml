@@ -3,6 +3,9 @@ kind: HyperConverged
 metadata:
   name: kubevirt-hyperconverged
 spec:
-  bareMetalPlatform: false
   infra: {}
-  workloads: {}
+  workloads:
+    nodePlacement:
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/baremetal
