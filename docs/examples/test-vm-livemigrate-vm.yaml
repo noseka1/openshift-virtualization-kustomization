@@ -3,6 +3,11 @@ kind: VirtualMachine
 metadata:
   name: test-vm-livemigrate
 spec:
+#  nodeSelector:
+#    node-role.kubernetes.io/baremetal: ""
+  tolerations:
+    - effect: NoSchedule
+      key: node-role.kubernetes.io/baremetal
   dataVolumeTemplates:
     - metadata:
         name: test-vm-livemigrate-rootdisk
